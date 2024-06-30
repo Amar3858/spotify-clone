@@ -1,0 +1,378 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+.sidebar{
+    background-color:#000;
+    width: 400px;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    
+}
+.main-content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+    
+}
+.nav-option i{
+    font-size: 1.25rem;
+   
+    
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem; 
+   
+}
+.nav-option:hover{
+    
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    
+    
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+    
+}
+.icons i{
+    opacity: 0.7;
+    margin-right:1rem ;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+     margin: 0.75rem 0 1.75rem 0; 
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+   font-size: 1rem;
+   font-weight: 700;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color:#fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.dark-badge{
+    background-color: #000;
+    color: white;
+   
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons{
+    margin-left:0.75rem ;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.nav-item{
+    margin-right:1.5rem ;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.span{
+    margin-left: 0.5rem;
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+}
+.cards-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.2;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 1rem 1rem 1rem 1rem; 
+}
+.player{
+    width: 50%;
+    /* background-color: orange; */
+}
+.controls{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player-control-icon{
+    height: 1rem;
+    margin-left: 2rem;
+    opacity: 0.7;
+
+}
+.player-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playback-bar input{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+
+}
+.progress-bar::-webkit-slider-thumb{
+    height: 1rem;
+    appearance: none;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.album-img img{
+    margin: 1rem 1.5rem 1rem 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 0.5rem;
+}
+.album-img{
+    margin-left: -1rem;
+}
+.text-1{
+    font-size: 1.1rem;
+    color:white;
+    font-weight: 550;
+    margin-top: -0.2rem;
+}
+.text-2{
+    font-size: 0.7rem;
+    margin-top: -1rem;
+    opacity: 0.5;
+}
+.album-icon {
+  margin-left: 1.5rem; 
+}
+ .speaker{
+    appearance: none;
+    margin-left: 0.5rem;
+} 
+
+.controls img{
+    margin-right:0.5rem ;
+}
+.img-img{
+    height: 1.1rem;
+}
+@media(max-width:1100px)
+{
+    .cards-container{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-top: 1rem;
+    }
+    .sidebar{
+        width: 200px;
+    }
+     .span{
+     font-size: 0.5rem;
+     margin-left: 0.2rem;
+     
+     
+    }
+   .dark-badge{
+    width: 5rem;
+    padding:0.3rem 0.4rem 0.3rem 0.2rem;
+    margin-right: 0.3rem;
+   }
+   .left{
+    margin-right: 0.6rem;
+   }
+   .sticky-nav-options i{
+    margin-left: 0.5rem;
+   }
+   .nav-option{
+    margin-left: 0;
+    padding: 0;
+   }
+  .nav-option a{
+    margin-left: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .icons i{
+    margin-right: 0.5rem;
+  }
+  .box{
+    height: 200px;
+  }
+
+  .player-control-icon{
+    height: 0.5rem;
+    margin-left: 0.6rem;
+    opacity: 0.7;
+  }
+  .album{
+    padding-right: 1.3rem;
+  }
+  .album-img img{
+    margin: 1rem 1rem 1rem 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+  }
+  .text-1{
+    font-size: 0.49rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+  .text-2{
+    font-size: 0.4rem;
+    margin-top: 0.1rem;
+  }
+  .album-icon i{
+    height: 0.4rem;
+    width: 0.1rem;
+    margin-right: 0.9rem;
+  }
+  .controls{
+    padding: 0 1.8rem 0 5rem;
+  }
+  .controls img {
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  
+  
+  
+  .controls i{
+    
+   font-size: 0.8rem;
+    /* padding-right: 1rem; */
+  }
+  
+  
+} 
